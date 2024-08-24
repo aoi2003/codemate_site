@@ -1,0 +1,113 @@
+.accordion {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.accordion-item:hover {
+  transform: translateY(-5px);
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;  /* 変更: flex-start から space-between へ */
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #f8f9fa;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #e9ecef;
+}
+
+/* チェックマークを削除するためコメントアウト
+.accordion-button::before {
+  content: '✓';
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-weight: bold;
+}
+*/
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+/* 矢印関連のスタイルをコメントアウト
+.chevron {
+  transition: transform 0.3s ease;
+  margin-left: auto;
+}
+
+.accordion-button[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+*/
+
+.accordion-content-text {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.accordion-content p {
+  all: unset;
+}
+
+.accordion-content p.accordion-content-text {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* 新しく追加する CSS */
+.accordion-button::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+  content: '-';
+}
+
+
+.accordion-button span {
+  font-weight: 600; /* やや太め */
+  color: #333; /* テキストの色を少し濃く */
+}
+
+/* オプション: さらに強調したい場合は以下のスタイルも追加できます */
+.accordion-button {
+  font-size: 1.1rem; /* ボタン全体のテキストサイズを少し大きく */
+}
+
+.accordion-button span {
+  font-weight: 700; /* より太く */
+  color: #000; /* テキストの色を黒に */
+}
