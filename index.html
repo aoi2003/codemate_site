@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codesmatesについて</title>
+    <link rel="stylesheet" href="activity.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <link rel="stylesheet" href="activity_parts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="recommended-title-styles.css">
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="accordion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+
+    <div id="splash">
+        <div id="splash_text">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="48" height="48" fill="#2589d0">
+                <path d="M14 0 H18 V8 H14 z" transform="rotate(0 16 16)" opacity=".1">
+                    <animate attributeName="opacity" from="1" to=".1" begin="0" dur="1s" repeatCount="indefinite"/>
+                </path>
+                <path d="M14 0 H18 V8 H14 z" transform="rotate(45 16 16)" opacity=".1">
+                    <animate attributeName="opacity" from="1" to=".1" begin="0.125s" dur="1s" repeatCount="indefinite"/>
+                </path>
+                <path d="M14 0 H18 V8 H14 z" transform="rotate(90 16 16)" opacity=".1">
+                    <animate attributeName="opacity" from="1" to=".1" begin="0.25s" dur="1s" repeatCount="indefinite"/>
+                </path>
+                <path d="M14 0 H18 V8 H14 z" transform="rotate(135 16 16)" opacity=".1">
+                    <animate attributeName="opacity" from="1" to=".1" begin="0.375s" dur="1s" repeatCount="indefinite"/>
+                </path>
+                <path d="M14 0 H18 V8 H14 z" transform="rotate(180 16 16)" opacity=".1">
+                    <animate attributeName="opacity" from="1" to=".1" begin="0.5s" dur="1s" repeatCount="indefinite"/>
+                </path>
+                <path d="M14 0 H18 V8 H14 z" transform="rotate(225 16 16)" opacity=".1">
+                    <animate attributeName="opacity" from="1" to=".1" begin="0.625s" dur="1s" repeatCount="indefinite"/>
+                </path>
+                <path d="M14 0 H18 V8 H14 z" transform="rotate(270 16 16)" opacity=".1">
+                    <animate attributeName="opacity" from="1" to=".1" begin="0.75s" dur="1s" repeatCount="indefinite"/>
+                </path>
+                <path d="M14 0 H18 V8 H14 z" transform="rotate(315 16 16)" opacity=".1">
+                    <animate attributeName="opacity" from="1" to=".1" begin="0.875s" dur="1s" repeatCount="indefinite"/>
+                </path>
+            </svg>
+        </div>
+    </div>
+
+
+    <main>
+    <div class="main-content">
+    <section class="features">
+        <div class="feature-image">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images\codemates.jpg" alt="Codesmates イメージ1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images\tamap_poster.png" alt="Codesmates イメージ2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images\プログラミング.jpg" alt="Codesmates イメージ3">
+                </div>
+            </div>
+        </div>
+        
+        <div class="feature-list">
+            <h3 id="recommended-title">
+                <span class="title-text">CODEMATEは<br>こんな人におすすめ<span class="toggle-icon"></span></span>
+                
+            </h3>
+            <div class="feature-items">
+                <ul>
+                    <li>
+                        <i class="fas fa-arrow-up"></i>
+                        <span>上昇志向のある人</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-code"></i>
+                        <span>プログラミングに関心がある人</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-rocket"></i>
+                        <span>新しく何かを始めたい人</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+        <div class="box-012">
+            <span>何故学ぶのか</span>
+            <p><del>授業中にバイトができるから。単位もお金も稼げるから</del><br>
+                プログラミングは、文系でも必要なスキルです。
+                高校でも教養として情報の授業を通じてプログラミングを通じた論理的思考を鍛えているかもしれないです<br><br>
+                そういった高校生が就職したときにプログラミングを学んでいない社会人は昇格に不利に働くか分からないですが出来ると何かの役に立つかもしれません<br><br>
+                大学4年間でプログラミングスキルを高め、ほかの学生に差をつけよう</p>
+        </div>
+        <h3 class="title">活動内容</h3>
+        <p>私たちは、pythonというプログラミング言語を習得し、社会全体に貢献できるアプリを開発できることを目標としています。<br><br>
+        pythonはいま来ているプログラミング言語です。初心者でも学びやすい構文で手っ取り早く、プログラミング技術を身につけられます。</p>
+        
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    <span>Pythonを基本としたプログラミング学習</span>
+                    
+                </button>
+                <div class="accordion-content">
+                    <p class="accordion-content-text">Pythonの基礎から応用まで、段階的に学習できます。初心者でも理解しやすいカリキュラムを用意しています。</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    <span>Pythonを利用したアプリ制作</span>
+                    
+                </button>
+                <div class="accordion-content">
+                    <p class="accordion-content-text">学んだ知識を活かして、実際のアプリケーション開発に取り組みます。チームでの協働作業を通じて、実践的なスキルを身につけられます。</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    <span>たまらぼを通じて、プログラミングを超えた多角的な活動</span>
+                    
+                </button>
+                <div class="accordion-content">
+                    <p class="accordion-content-text">たまらぼ：法政大学が主催する学生主導の起業支援プログラム</p>
+                    <p class="accordion-content-text">プログラミングスキルを活かしつつ、起業や事業開発など幅広い経験を積むことができます。多様な分野の学生と交流し、視野を広げられる機会です。</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="title">さいごに</h3>
+        <p>Codematesでは年功序列や伝統による "しがらみ" がないので、いろいろなバックグラウンドをもった学生が互いに聞きあい、高めあい、成長していくサークルです。<br><br>
+        サークルの活動日以外にも、資格勉強の情報共有・マインクラフト・飲み活動をするなどサークル構成員間の活動が活発です。</p>
+    
+    </div>
+    </main>
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="loading-transition.js"></script>
+        <script src="slide.js"></script>
+        <script src="accordion.js"></script>
+        <script>
+            // header.htmlを非同期で読み込む
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    const headerContent = new DOMParser().parseFromString(data, 'text/html');
+                    const header = headerContent.querySelector('header');
+                    document.getElementById('header-placeholder').appendChild(header);
+                    
+                    // スタイルを適用
+                    const style = headerContent.querySelector('style');
+                    if (style) {
+                        document.head.appendChild(style);
+                    }
+                })
+                .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
+        </script>
+    </body>
+    </html>
+<!---liで箇条書き ulで番号つきの箇条書き-->
+<!-- p でパラグラフ　一行一行の区切りが br より明らか-->
+<!---Googleスライドをhtmlに埋め込むこともできる。htmlで書くより楽　https://support.google.com/docs/answer/183965?hl=ja&co=GENIE.Platform%3DDesktop-->

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>グローバルナビゲーション例</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .global-header {
+            background-color: #333;
+            padding: 1em 0;
+        }
+        .global-nav__list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .global-nav__item {
+            margin: 0 2.5%;
+        }
+        .global-nav__link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        .global-nav__link:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header class="global-header">
+        <nav class="global-nav">
+            <ul class="global-nav__list">
+                <li class="global-nav__item"><a class="global-nav__link" href="#home">ホーム</a></li>
+                <li class="global-nav__item"><a class="global-nav__link" href="#about">活動内容</a></li>
+                <li class="global-nav__item"><a class="global-nav__link" href="#schedule">活動予定</a></li>
+                <li class="global-nav__item"><a class="global-nav__link" href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- ここにメインコンテンツを追加 -->
+    </main>
+</body>
+</html>
