@@ -16,8 +16,8 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: 10%;
-  width: 80%;
+  left: 0%; /* ネガティブな値を使用 */
+  width: 100%; /* 全体の幅を増やす */
   height: 2px;
   background: #0481A2;
   transition: all .3s;
