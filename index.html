@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="slide.css">
     <link rel="stylesheet" href="accordion.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/5-4.css">
 </head>
 <body>
     <div id="header-placeholder"></div>
-
-
+    <div id="particles-js"></div>
+    <div id="wrapper">
     <div id="splash">
         <div id="splash_text">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="48" height="48" fill="#2589d0">
@@ -49,7 +50,6 @@
         </div>
     </div>
 
-
     <main>
     <div class="main-content">
     <section class="features">
@@ -70,7 +70,6 @@
         <div class="feature-list">
             <h3 id="recommended-title">
                 <span class="title-text">CODEMATEは<br>こんな人におすすめ<span class="toggle-icon"></span></span>
-                
             </h3>
             <div class="feature-items">
                 <ul>
@@ -107,7 +106,6 @@
             <div class="accordion-item">
                 <button class="accordion-button" aria-expanded="false">
                     <span>Pythonを基本としたプログラミング学習</span>
-                    
                 </button>
                 <div class="accordion-content">
                     <p class="accordion-content-text">Pythonの基礎から応用まで、段階的に学習できます。初心者でも理解しやすいカリキュラムを用意しています。</p>
@@ -116,7 +114,6 @@
             <div class="accordion-item">
                 <button class="accordion-button" aria-expanded="false">
                     <span>Pythonを利用したアプリ制作</span>
-                    
                 </button>
                 <div class="accordion-content">
                     <p class="accordion-content-text">学んだ知識を活かして、実際のアプリケーション開発に取り組みます。チームでの協働作業を通じて、実践的なスキルを身につけられます。</p>
@@ -125,7 +122,6 @@
             <div class="accordion-item">
                 <button class="accordion-button" aria-expanded="false">
                     <span>たまらぼを通じて、プログラミングを超えた多角的な活動</span>
-                    
                 </button>
                 <div class="accordion-content">
                     <p class="accordion-content-text">たまらぼ：法政大学が主催する学生主導の起業支援プログラム</p>
@@ -144,6 +140,8 @@
         <script src="loading-transition.js"></script>
         <script src="slide.js"></script>
         <script src="accordion.js"></script>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/5-4.js"></script>
         <script>
             // header.htmlを非同期で読み込む
             fetch('header.html')
@@ -161,8 +159,6 @@
                 })
                 .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
         </script>
+    </div>
     </body>
     </html>
-<!---liで箇条書き ulで番号つきの箇条書き-->
-<!-- p でパラグラフ　一行一行の区切りが br より明らか-->
-<!---Googleスライドをhtmlに埋め込むこともできる。htmlで書くより楽　https://support.google.com/docs/answer/183965?hl=ja&co=GENIE.Platform%3DDesktop-->
