@@ -6,28 +6,44 @@
     <title>codesmatesについて</title>
     <link rel="stylesheet" href="tamap.css">
 </head>
-<h3 class="title1">TaMAP.</h3>
-<div class="body1">
-<img class="tamap_poster" src="images/tamap_poster.png">
+<body>
+    <div id="header-placeholder"></div>
+    <h3 class="title1">TaMAP.</h3>
+    <div class="body1">
+        <img class="tamap_poster" src="images/tamap_poster.png">
 
-<p>多摩キャンパス専用　バス時刻表App<br>
-2023年の秋ごろから開発しました。</p>
-<br>
-<div class="title2">How to install</div>
-<br>
-<li class="li1">for Android<br>chromeで開いてください
-    ＞３点リーダー＞インストール</li>
+        <p>多摩キャンパス専用　バス時刻表App<br>
+        2023年の秋ごろから開発しました。</p>
+        <br>
+        <div class="title2">How to install</div>
+        <br>
+        <li class="li1">for Android<br>chromeで開いてください
+            ＞３点リーダー＞インストール</li>
 
-<li class="li1">for iOS<br>共有ボタンから＞ホームに追加</li>
-<br>
-<div class="title2">
-<a href="https://codemates.lolitapunk.jp/tamap/">Download Here</a></div>
-</div>
-<div class="mar">　</div>
+        <li class="li1">for iOS<br>共有ボタンから＞ホームに追加</li>
+        <br>
+        <div class="title2">
+            <a href="https://codemates.lolitapunk.jp/tamap/">Download Here</a>
+        </div>
+    </div>
+    <div class="mar">　</div>
+
+    <script>
+        // header.htmlを非同期で読み込む
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                const headerContent = new DOMParser().parseFromString(data, 'text/html');
+                const header = headerContent.querySelector('header');
+                document.getElementById('header-placeholder').appendChild(header);
+                
+                // スタイルを適用
+                const style = headerContent.querySelector('style');
+                if (style) {
+                    document.head.appendChild(style);
+                }
+            })
+            .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
+    </script>
+</body>
 </html>
-
-
-<!---liで箇条書き ulで番号つきの箇条書き-->
-<!-- p でパラグラフ　一行一行の区切りが br より明らか-->
-<!---Googleスライドをhtmlに埋め込むこともできる。htmlで書くより楽　https://support.google.com/docs/answer/183965?hl=ja&co=GENIE.Platform%3DDesktop-->
-</html
