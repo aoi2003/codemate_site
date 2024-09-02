@@ -6,8 +6,10 @@
     <title>codesmatesについて</title>
     <link rel="stylesheet" href="tamap.css">
 </head>
+<div class="header" id="header-placeholder"></div>
+<div id="container">
+    <div id="main">
 <body>
-    <div id="header-placeholder"></div>
     <h3 class="title1">TaMAP.</h3>
     <div class="body1">
         <img class="tamap_poster" src="images/tamap_poster.png">
@@ -22,11 +24,11 @@
 
         <li class="li1">for iOS<br>共有ボタンから＞ホームに追加</li>
         <br>
-        <div class="title2">
-            <a href="https://codemates.lolitapunk.jp/tamap/">Download Here</a>
-        </div>
+        <button class="custom-btn btn-1" onclick="location.href='https://codemates.lolitapunk.jp/tamap/'">Download Here</button>
+        <!-- <div class="title2"> -->
+            <!-- <a href="https://codemates.lolitapunk.jp/tamap/">Download Here</a> -->
+        <!-- </div> -->
     </div>
-    <div class="mar">　</div>
 
     <script>
         // header.htmlを非同期で読み込む
@@ -46,4 +48,6 @@
             .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
     </script>
 </body>
+</div>
+</div>
 </html>

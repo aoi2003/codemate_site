@@ -1,37 +1,105 @@
-.tamap_poster{
-    width: 100%;
-    justify-items: center;
-}
-
-html{
+html {
     background-color: rgb(250, 250, 250);
 }
 
-.title1{
-    font-weight: bold;
-    font-size: 20vw;
-    text-align: center;
-    color: black;
-    margin-top: 22%;
-    font-family:Roboto,Arial;
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    height: 140vh;
 }
 
-.title2{
-    font-size: 6vw;
+.header{
+    position: fixed;/*fixedで固定*/
+    top: 0;
+    width: 100%;
+}
+
+#container {
+    max-width: 640px; /* コンテナの最大幅 */
+    width: 100%; /* 画面幅に対する100% */
+    padding: 0; /* 余白を追加するためのパディング */
+    box-sizing: border-box; /* パディングを含めた幅を調整 */
+}
+
+.title1 {
+    margin: 55% 0 10% 0;
+    block-size: 100px;
+    font-weight: bold;
+    font-size: min(12vw, 100px);
+    text-align: center;
+    color: black;
+    font-family: Roboto, Arial;
+}
+
+#main {
+    width: 100%;
+}
+
+.tamap_poster {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.body1 {
+    margin: 0 7%;
+    font-family: Noto Sans JP, -apple-system, BlinkMacSystemFont, Helvetica Neue, Hiragino Sans, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Yu Gothic, YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    font-weight: 300;
+}
+
+.title2 {
+    font-size: min(6vw, 60px);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 100;
 }
 
-.li1{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-}
-.body1{
-    margin: 0% 8%;
-    font-family: Noto Sans JP,-apple-system,BlinkMacSystemFont,Helvetica Neue,Hiragino Sans,"\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3",Hiragino Kaku Gothic ProN,Yu Gothic,YuGothic,Verdana,Meiryo,"M+ 1p",sans-serif;
+p{
+    font-size: min(4vw, 18px);
     font-weight: 300;
 }
 
-.mar{
+.li1 {
+    font-size: min(4vw, 18px);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+button {
+    margin: 20px;
+    outline: none;
+}
+.custom-btn {
+    width: auto;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+  /* 1 */
+.btn-1 {
+    transition: all 0.3s ease;
+    position:fixed;
+    right:20px;
+    bottom:16px;
+}
+.btn-1:hover {
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+}
+
+.mar {
     margin: 10vh 0;
 }
